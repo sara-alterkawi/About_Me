@@ -1,0 +1,76 @@
+body {
+    font-family: 'Trade Winds';
+    font-size: 22px;
+
+}
+
+#om-mig{
+    text-align: center;
+    color:  #3498db;
+    font-size: 35px;
+}
+
+#logo-jpg{
+    margin: auto;
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 35%;
+}
+
+#kontakta-mig{
+    margin: auto;
+    display: block;
+    padding-top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15%;
+    clear: both;
+}
+
+table{
+    text-align: justify;
+    color: #130f40;
+    font-family: 'Stylish';
+    font-size: 22px;
+}
+
+#tel{
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+    color: #3498db;
+    padding-right: 25px;
+    font-weight: bold;
+    font-size: 22px; 
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+text-decoration: underline;
+color:#130f40;
+}
+
+#lista{
+    color: #3498db;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#details{
+    color: #130f40;
+    font-family: 'Stylish';
+    font-size: 22px;
+}
+
+.bottom {
+    text-align: center;
+    color: #009432;
+    font-family: 'Stylish';
+ }
