@@ -25,9 +25,9 @@ I love building projects, improving my skills, and sharing my progress with the 
 ---
 
 ### 💻 Featured Projects <img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="150" />
-- [Auto Word Craft – Embedded & Web Integration](https://github.com/sara-alterkawi/Auto-Word-Craft)  
-- [Real-Time Microkernel (RTMK)](https://github.com/sara-alterkawi/RTMK)  
-- [Greenhouse Automation System](https://github.com/sara-alterkawi/Greenhouse-Automation-System)  
+- [Auto Word Craft – Embedded & Web Integration](https://github.com/sara-alterkawi/Robot_Fullstack_Version)  
+- [Real-Time Microkernel (RTMK)](https://github.com/sara-alterkawi/DST2_Project)  
+- [Greenhouse Automation System](https://github.com/sara-alterkawi/DST1_Project)  
 
 ---
 
