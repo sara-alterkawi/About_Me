@@ -1,76 +1,198 @@
+:root {
+    --primary: #2c3e50;
+    --accent: #2980b9;
+    --accent-light: #3498db;
+    --text: #34495e;
+    --bg: #f4f6f8;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Trade Winds';
-    font-size: 22px;
-
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
 }
 
-#om-mig{
+nav#om-mig {
     text-align: center;
-    color:  #3498db;
-    font-size: 35px;
+    background: var(--primary);
+    color: var(--white);
+    padding: 20px 15px;
 }
 
-#logo-jpg{
-    margin: auto;
-    display: block;
-    width: 300px;
-    height: 300px;
-    border-radius: 35%;
+nav#om-mig ul {
+    list-style: none;
+    margin: 0 0 10px 0;
+    padding: 0;
 }
 
-#kontakta-mig{
-    margin: auto;
-    display: block;
-    padding-top: 10px;
-    width: 30px;
-    height: 30px;
-    border-radius: 15%;
-    clear: both;
+nav#om-mig h3 {
+    margin: 0;
+    font-size: 26px;
+    letter-spacing: 1px;
 }
 
-table{
-    text-align: justify;
-    color: #130f40;
-    font-family: 'Stylish';
-    font-size: 22px;
-}
-
-#tel{
-    text-align: center;
-}
-
-li{
+li {
     display: inline-block;
-    color: #3498db;
-    padding-right: 25px;
-    font-weight: bold;
-    font-size: 22px; 
+    padding: 0 18px;
+    font-weight: 600;
+    font-size: 16px;
 }
 
-a{
+a {
     text-decoration: none;
-    color: inherit;
-}
-a:hover{
-text-decoration: underline;
-color:#130f40;
+    color: var(--white);
+    transition: color 0.2s ease;
 }
 
-#lista{
-    color: #3498db;
+a:hover {
+    color: var(--accent-light);
     text-decoration: underline;
-    font-weight: bold;
-    font-size: 22px;
 }
 
-#details{
-    color: #130f40;
-    font-family: 'Stylish';
-    font-size: 22px;
+#lista a,
+#details a {
+    color: var(--accent);
+}
+
+.container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 30px 25px 10px 25px;
+}
+
+#logo-jpg {
+    margin: 30px auto 15px auto;
+    display: block;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--white);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+#kontakta-mig {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+
+.social-row {
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+.social-row a {
+    display: inline-block;
+}
+
+#details {
+    color: var(--text);
+    font-size: 17px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+h1.hero-name {
+    text-align: center;
+    font-size: 34px;
+    color: var(--primary);
+    margin: 10px 0 0 0;
+}
+
+p.hero-tagline {
+    text-align: center;
+    font-size: 18px;
+    color: var(--accent);
+    margin: 6px 0 25px 0;
+    font-weight: 500;
+}
+
+.btn-cta {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    background: var(--accent);
+    color: var(--white);
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(41,128,185,0.3);
+}
+
+.btn-cta:hover {
+    background: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+}
+
+#lista, h3.section-title {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 20px;
+    border-bottom: 2px solid var(--accent-light);
+    padding-bottom: 6px;
+    margin: 35px auto 15px auto;
+    max-width: 700px;
+}
+
+ol#details, ul.project-list {
+    max-width: 700px;
+    margin: 0 auto 10px auto;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.project-item {
+    margin-bottom: 12px;
+}
+
+.project-item strong {
+    color: var(--primary);
+}
+
+table {
+    text-align: justify;
+    color: var(--primary);
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+#tel {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 10px;
 }
 
 .bottom {
     text-align: center;
-    color: #009432;
-    font-family: 'Stylish';
- }
+    color: var(--white);
+    background: var(--primary);
+    font-size: 14px;
+    padding: 18px 10px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 15px 5px 15px;
+    }
+    h1.hero-name {
+        font-size: 26px;
+    }
+    #lista, h3.section-title {
+        font-size: 18px;
+    }
+}
